@@ -1,0 +1,10 @@
+body {
+    background-color: #bfb7b7;
+    font-family: cursive;
+}
+.jumbotron {
+    background-image: "bookbanner.jpg";
+}
+#book-list > li {
+    border: solid black 2px;
+}
