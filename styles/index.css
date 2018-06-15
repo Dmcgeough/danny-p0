@@ -1,10 +1,25 @@
 body {
-    background-color: #bfb7b7;
     font-family: cursive;
+    color:black; 
+    background: linear-gradient(#659df7, white);
 }
 .jumbotron {
-    background-image: "bookbanner.jpg";
+    color: black;
+    background: #ffe182;
 }
 #book-list > li {
     border: solid black 2px;
+}
+
+#background-image {
+    height: auto;
+    width: 100%;
+}
+
+#cart {
+    background: #ffe182;
+}
+
+table, th, td {
+    border: 1px solid black;
 }
