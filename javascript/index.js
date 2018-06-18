@@ -1,6 +1,10 @@
 
 function buyFunction() {
-    document.querySelector("#buy-button").innerHTML = "Bought!";
+    document.querySelector("#buy-button").innerHTML = "Added to Cart!";
+}
+
+function addToCart() {
+    
 }
 
 
@@ -27,3 +31,4 @@ var book11 = ["The Grey Ghost", "Clive Cussler", 13.99];
 var book12 = ["The Death of Mrs. Westaway", "Ruth Ware", 12.99];
 
 var bookArray = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10, book11, book12];
+
