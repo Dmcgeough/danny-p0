@@ -1,8 +1,3 @@
-
-function buyFunction() {
-    document.querySelector("#buy-button").innerHTML = "Added to Cart!";
-}
-
 function addToCart() {
     var t = bookArray[i].title;
     var p = bookArray[i].price;
