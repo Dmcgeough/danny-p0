@@ -2,7 +2,11 @@ var express = require('express');
 var path = require('path');
 const app = express();
 
-app.use('/static', express.static('public'));
+app.use('/', express.static('styles'));
+
+app.use('/', express.static('images'));
+
+app.use('/', express.static('javascript'));
 
 app.get('', (req, res) => {
     res.sendFile(path.join(__dirname, '../templates/index.html'));
