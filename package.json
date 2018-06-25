@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Dmcgeough/danny-project0#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "mongodb": "^3.0.10"
+    "mongodb": "^3.0.10",
+    "nunjucks": "^3.1.3"
   }
 }
