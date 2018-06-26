@@ -2,9 +2,7 @@ const express = require('express');
 const path = require('path');
 const nunjucks = require('nunjucks');
 const bodyParser = require('body-parser');
-const mongodb = require('mongodb');
 const app = express();
-const mongoClient = mongodb.MongoClient;
 
 nunjucks.configure('src/views',  {
     autoescape: true,
@@ -25,12 +23,6 @@ app.use('/', express.static('images'));
 
 app.use(express.static('src/scripts'));
 
-mongoClient.connect('mongodb://localhost:27017/', function(err, client) {
-  if (err) {
-      console.error(err);
-      client.close();
-  } else 
-
 app.route('/')
 .get((req, res) => {
     res.render('index');
@@ -50,4 +42,3 @@ app.route('/contact-us')
 .get((req, res) => {
     res.render('contact-us');
         });
-    });
