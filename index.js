@@ -1,2 +1,1 @@
-require('./javascript/express');
-require('./javascript/add-to-cart');
+require('./src/app.js');

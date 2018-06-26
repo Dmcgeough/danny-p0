@@ -1,0 +1,24 @@
+{% extends 'boilerplate.nunjucks' %}
+    {% block main %}
+            <h2 class="col-sm-12">Contact Us</h2>
+                <h3> Do not hesistate to provide us with constructive criticism or feedback.</h3>
+
+            <form action=:"" class="col-sm-6">
+                <label for="">Name</label>
+                <input type="text" id="name" name="name" class="form-control">
+                <label for="">Email</label>
+                <input type="text" id="email" name="email" class="form-control">
+                <label for="">Phone</label>
+                <input type="text" id="phone" name="phone" class="form-control">
+                <label for="">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+
+                <button type="reset" class="btn btn-danger">Cancel Your Comment</button>
+                <button type="submit" class="btn btn-success">Submit Your Comment</button>
+            </form>
+    {% endblock %}
+
+ 
+    
+
+    

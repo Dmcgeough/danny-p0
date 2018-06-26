@@ -1,0 +1,6 @@
+{% extends 'boilerplate.nunjucks' %}
+    {% block main%}
+    <main class="row">
+        
+    </main>
+    {% endblock %}
