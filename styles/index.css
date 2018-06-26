@@ -1,11 +1,11 @@
 body {
     font-family: cursive;
     color:black; 
-    background: linear-gradient(#ffe182, white);
+    background: linear-gradient(white, grey);
 }
 .jumbotron {
     color: black;
-    background: #ffe182;
+    background: #f27135;
 }
 #book-list > li {
     border: solid black 2px;
