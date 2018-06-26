@@ -1,29 +1,29 @@
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
+// var MongoClient = require('mongodb').MongoClient;
+// var url = "mongodb://localhost:27017/";
 
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  var feb = db.db("bookstoredb");
-  var bookArray = [
-    { id: 'book1', title: 'The Girl with the Dragon Tattoo', price: '$7.99'},
-    { id: 'book2', title: 'Never Go Back', price: '$7.99'},
-    { id: 'book3', title: 'Best Served Cold', price: '$13.99'},
-    { id: 'book4', title: 'Cronkite', price: '$19.99'},
-    { id: 'book5', title: '50 Shades of Grey', price: '$9.99'},
-    { id: 'book6', title: 'The President is Missing', price: '$17.99'},
-    { id: 'book7', title: 'Shelter in Place', price: '$14.99'},
-    { id: 'book8', title: 'The Soul of America', price: '$17.99'},
-    { id: 'book9', title: 'The Fallen', price: '$14.99'},
-    { id: 'book10', title: 'Something in the Water', price: '$13.99'},
-    { id: 'book11', title: 'The Grey Ghost', price: '$13.99'},
-    { id: 'book12', title: 'The Death of Mrs. Westaway', price: '$12.99'}
-  ];
-  feb.collection("books").insertMany(bookArray, function(err, res) {
-    if (err) throw err;
-    console.log("Number of documents inserted: " + res.insertedCount);
-    db.close();
-  });
-});
+// MongoClient.connect(url, function(err, db) {
+//   if (err) throw err;
+//   var feb = db.db("bookstoredb");
+//   var bookArray = [
+//     { id: 'book1', title: 'The Girl with the Dragon Tattoo', price: '$7.99'},
+//     { id: 'book2', title: 'Never Go Back', price: '$7.99'},
+//     { id: 'book3', title: 'Best Served Cold', price: '$13.99'},
+//     { id: 'book4', title: 'Cronkite', price: '$19.99'},
+//     { id: 'book5', title: '50 Shades of Grey', price: '$9.99'},
+//     { id: 'book6', title: 'The President is Missing', price: '$17.99'},
+//     { id: 'book7', title: 'Shelter in Place', price: '$14.99'},
+//     { id: 'book8', title: 'The Soul of America', price: '$17.99'},
+//     { id: 'book9', title: 'The Fallen', price: '$14.99'},
+//     { id: 'book10', title: 'Something in the Water', price: '$13.99'},
+//     { id: 'book11', title: 'The Grey Ghost', price: '$13.99'},
+//     { id: 'book12', title: 'The Death of Mrs. Westaway', price: '$12.99'}
+//   ];
+//   feb.collection("books").insertMany(bookArray, function(err, res) {
+//     if (err) throw err;
+//     console.log("Number of documents inserted: " + res.insertedCount);
+//     db.close();
+//   });
+// });
 
 
 

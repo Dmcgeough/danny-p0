@@ -1,6 +1,6 @@
 {% extends 'boilerplate.nunjucks' %}
     {% block main %}
-    <main class="row">
+    <main class="container">
         <article> Welcome to our online store page. Here you can browse a small selection of books that you can buy from us
             and that will be delivered to your location. This does not show the breadth of our selection but rather shows an
             accurate snapshot of the kind of books that we would be happy for you to purchase.
