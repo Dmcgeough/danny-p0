@@ -44,11 +44,6 @@ app.route('/mission-statement')
     res.render('mission-statement');
 });
 
-app.route('/shopping-cart')
-.get((req, res) => {
-    res.render('shopping-cart');
-});
-
 app.route('/contact-us')
 .get((req, res) => {
     res.render('contact-us');
