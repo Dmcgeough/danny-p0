@@ -23,6 +23,8 @@ app.use(express.static('styles'));
 
 app.use('/', express.static('images'));
 
+app.use(express.static('src/scripts'));
+
 mongoClient.connect('mongodb://localhost:27017/', function(err, client) {
   if (err) {
       console.error(err);

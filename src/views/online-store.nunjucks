@@ -180,4 +180,5 @@
         </li>
     </ol>
     </main>
+    <script src="buy.js"></script>
     {% endblock %}

@@ -1,7 +1,7 @@
 var addButton1 = document.querySelector("button[name='book1-button']");
 
 addButton1.addEventListener('click', () => {  
-    document.querySelector("button[name='book1-button']").innerNunjucks = "Added to Cart!";
+    document.querySelector("button[name='book1-button']").innerHTML = "Added to Cart!";
 });
 
 
@@ -9,7 +9,7 @@ addButton1.addEventListener('click', () => {
 var addButton2 = document.querySelector("button[name='book2-button']");
 
 addButton2.addEventListener('click', () => {  
-    document.querySelector("button[name='book2-button']").innerNunjucks = "Added to Cart!";
+    document.querySelector("button[name='book2-button']").innerHTML = "Added to Cart!";
 });
 
 
